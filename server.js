@@ -13,7 +13,13 @@ app.get('/test', (req, res)=>{
     res.send();
 });
 
-//ctrl+c
+app.get("/contact", function(request, response){
+    response.send("Contact me at  my_email@....com");
+});
+
+app.get("/about", function(request, response){
+    response.send("My name is Jan-Marcus Sivadi. I'm interested in web development and I love pepsi.");
+});
 
 app.listen(3000, ()=>{
     console.log('Server is up and running on port 3000')
